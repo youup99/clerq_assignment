@@ -1,24 +1,12 @@
-# README
+# Clerq Take-home Assignment!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Code Structure
+- All the code lives under `app` and `library`
+- Using Rails Controller to expose this as an API
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## How to test this out
+1. Run `rails server`
+2. Example requests
+  - Terminal: `curl -X GET http://localhost:3000/settlement -d merchant=Weeks+Group+LLC -d date=2023-01-13`
+  - Browser: `http://localhost:3000/settlement?merchant=Weeks+Group+LLC&date=2023-01-13`
+    - Note: To see the parsed results, you are able to comment out this [line of code](https://github.com/youup99/clerq_assignment/blob/0d721b11f6e420ea7e5e97b8e266f339b3ccfc7e/app/controllers/settlement_controller.rb#L8)
