@@ -1,0 +1,18 @@
+<h1>Listing Settlement</h1>
+
+<h2>Settlement Amount: $<%= @settlement[:settlement_amount] %></h2>
+<h2>Transactions</h2>
+<ul>
+  <li>Count: <%= @settlement[:transaction_count] %></li>
+  <li>IDs: <%= @settlement[:transaction_ids] %></li>
+</ul> 
+<h2>Merchant</h2>
+<ul>
+  <li>Merchant ID: <%= @settlement[:merchant][:id] %></li>
+  <li>Merchant Name: <%= @settlement[:merchant][:name] %></li>
+</ul>
+<h2>Date Range</h2>
+<ul>
+  <li>Start: <%= @settlement[:date_range][:created_at__gt] %></li>
+  <li>End: <%= @settlement[:date_range][:created_at__lte] %></li>
+</ul>
